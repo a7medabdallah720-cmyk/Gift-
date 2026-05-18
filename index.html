@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Romantic Heart ❤️</title>
+  <title>My Love Page ❤️</title>
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      font-family: Arial;
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
-      font-family: Arial;
+      min-height: 100vh;
     }
 
-    .box {
-      text-align: center;
+    .card {
       background: white;
-      padding: 30px;
+      padding: 20px;
       border-radius: 20px;
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
       box-shadow: 0 0 20px rgba(0,0,0,0.2);
     }
 
     .heart {
-      font-size: 70px;
+      font-size: 50px;
       animation: beat 1s infinite;
     }
 
@@ -32,24 +34,44 @@
       100% { transform: scale(1); }
     }
 
+    img {
+      width: 100%;
+      border-radius: 15px;
+      margin-top: 10px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
     button {
       margin-top: 10px;
-      padding: 10px 20px;
+      padding: 10px 15px;
       border: none;
       background: #ff4d6d;
       color: white;
       border-radius: 10px;
-      cursor: pointer;
     }
   </style>
 </head>
 
 <body>
-  <div class="box">
+  <div class="card">
+
     <div class="heart">❤️</div>
-    <h1>I Love You</h1>
+
+    <h2>I Love You</h2>
+
     <p>This page is made just for you 💕</p>
-    <button onclick="alert('❤️ I Love You')">Click Me</button>
+
+    <!-- صورة -->
+    <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7" />
+
+    <p>Every moment with you is special ✨</p>
+
+    <button onclick="alert('❤️ I love you so much')">Click Me</button>
+
   </div>
 </body>
 </html>
